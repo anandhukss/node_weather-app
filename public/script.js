@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
     cityDiv.innerHTML = "<div class='spinner-border text-dark' role='status'><span class='sr-only'>Loading...</span></div>"
 
     event.preventDefault()
-    console.log(locationData.value)
+    
 
     fetch('http://localhost:3000/forecast?city=' + locationData.value).then((response) => {
         response.json().then((data) => {

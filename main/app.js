@@ -12,7 +12,7 @@ const partialsPath = path.join(__dirname, '../partials');
 
 
 hbs.registerPartials(partialsPath);
-console.log(partialsPath)
+// console.log(partialsPath)
 app.set('view engine', 'hbs');
 
 app.use(express.static(directory));
