@@ -11,7 +11,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault()
     
 
-    fetch('http://localhost:3000/forecast?city=' + locationData.value).then((response) => {
+    fetch('/forecast?city=' + locationData.value).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 // console.log(data.error)

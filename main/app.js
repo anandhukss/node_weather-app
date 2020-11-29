@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const hbs = require('hbs');
 const forecast = require('./forecast');
-
+const port=process.env.PORT || 3000
 
 
 
@@ -43,4 +43,4 @@ app.get('/*', (req, res)=>{
     res.send("404 page not found")
 })
 
-app.listen(3000, () => console.log("Server is up"))
+app.listen(port, () => console.log("Server is up"))
