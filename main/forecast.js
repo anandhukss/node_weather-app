@@ -9,8 +9,8 @@ const forecast = (city, callback) => {
             callback("City not found", undefined)
         }
         else {
-            var kelvinT = parseFloat(response.body.main.temp)
-            var celciusT = kelvinT - 273.15
+            // var kelvinT = parseFloat(response.body.main.temp)
+            // var celciusT = kelvinT - 273.15
             callback(undefined, response.body)
 
 
