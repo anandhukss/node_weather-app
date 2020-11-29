@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const hbs = require('hbs');
 const forecast = require('./forecast');
-var port=process.env.PORT
+var port=process.env.PORT || 3000
 
 
 
